@@ -34,9 +34,26 @@ class SortedList {
       return Math.min(...this.items);
     }
   }
-  sum() {}
+  sum() {
+    if (this.items.length === 0) {
+      return 0;
+    } else {
+      return this.items.reduce((acc, curr) => {
+        return acc + curr;
+      }, 0);
+    }
+  }
 
-  avg() {}
+  avg() {
+    if (this.items.length === 0) {
+      throw new Error("OutOfBounds");
+    } else {
+      var sum = this.items.reduce((acc, curr) => {
+        return acc + curr;
+      }, 0);
+    }
+    return sum / this.items.length;
+  }
 }
 
 module.exports = SortedList;
