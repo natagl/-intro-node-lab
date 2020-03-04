@@ -1,4 +1,4 @@
-# -intro-node-lab
+
 # Intro to Node
 
 ## Introduction
